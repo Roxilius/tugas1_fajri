@@ -1,12 +1,5 @@
-import Card from "./components/Card";
+import Card, { Candidate } from "./components/Card";
 
-export interface Candidate {
-  id: number,
-  nama: string,
-  foto: string,
-  noUrut: number,
-  angkatan: number
-}
 const candidates: Candidate[] = [
   {
     id: 1,
