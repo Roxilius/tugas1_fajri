@@ -1,6 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { Candidate } from "../App";
-
+// import { Candidate } from "../App";
+export interface Candidate {
+    id: number,
+    nama: string,
+    foto: string,
+    noUrut: number,
+    angkatan: number
+  }
 const Card: React.FC<{ candidate: Candidate }> = ({ candidate }) => {
     return (
         <div className="m-auto border-white border-2 rounded-lg p-3">
