@@ -40,7 +40,7 @@ export default function App() {
       <main className="flex flex-col p-3 gap-2 w-screen bg-slate-500">
         <h1 className="text-center text-4xl">Kandidat Pemilu PUB</h1>
         <h1 className="text-center text-2xl">Calon Ketua Dan Keamanan</h1>
-        <div className="flex">
+        <div className="grid gap-3 sm:flex">
           {candidates.map((candidate) => (
             <Card key={candidate.id} candidate={candidate} />
           ))}
